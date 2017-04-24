@@ -1,5 +1,7 @@
 import time
 
+from numba import jit
+
 from ccd.procedures import fit_procedure as __determine_fit_procedure
 import numpy as np
 from ccd import app, math_utils, qa
@@ -96,6 +98,7 @@ def __sort_dates(dates):
     return np.argsort(dates)
 
 
+@jit
 def detect(dates, blues, greens, reds, nirs,
            swir1s, swir2s, thermals, quality,
            params=None):

@@ -52,11 +52,11 @@ def numpy_hashkey(array):
 # To alter where log messages go or how they are represented,
 # configure the logging system below.
 # iso8601 date format
-__format = '%(asctime)s %(module)-10s::%(funcName)-20s - [%(lineno)-3d]%(message)s'
-logging.basicConfig(#stream=sys.stderr,
-                    level=logging.DEBUG,
-                    format=__format,
-                    datefmt='%Y-%m-%d %H:%M:%S')
+# __format = '%(asctime)s %(module)-10s::%(funcName)-20s - [%(lineno)-3d]%(message)s'
+# logging.basicConfig(#stream=sys.stderr,
+#                     level=logging.INFO,
+#                     format=__format,
+#                     datefmt='%Y-%m-%d %H:%M:%S')
 
 
 # Configure caching
